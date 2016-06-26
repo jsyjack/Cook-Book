@@ -3,7 +3,7 @@
 $.fn.jacksSlider = function() {
     
 	// Setup
-	var	slider = {};
+	var slider = {};
 	var currentSlide = 0;
 	var nextSlide = 0;
 	var numOfImages;
@@ -137,74 +137,12 @@ $.fn.jacksSlider = function() {
 
 
 
-
-
-
-
-
-// Other JS
-
-( function( $ ) {
-
-// JS for Main Menu
-$("header .menu, #open-menu .close").click(function() {
-	$("#open-menu").fadeToggle();
-});
-
-$("#explore-lanique").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#instagram-feed").offset().top
-    }, 1000);
-});
-
-$(".readmore-history").click(function() {
-	window.location = "/history";
-});
-
-// JS for Where To Buy Desktop
-$(".wtb-map-images img").click(function() {
-	var region = $(this).attr("data-region");
-
-	$(".wtb-map-images img").removeClass("active");
-	$(this).addClass("active");
-
-	var infoClass = ".wtb-info." + region;
-
-	console.log(infoClass);
-
-	$(".wtb-info").slideUp();
-
-	$(infoClass).delay(400).slideDown();
-});
-
-
-// JS for Home History bg image if screen width is < or = to 568px
-if($(document).width() <= 568 ) {
-
-	$("#history div").css("background-size", parseInt($(document).width()));
-
-}
-
-
-
-
-
-} )( jQuery );
-
-
-
-
-
-
-
-
-
 ( function( $ ) {
 
 $.fn.jacksSliderMobile = function() {
 
 	// Setup
-	var	slider = {};
+	var slider = {};
 	var currentSlide = 0;
 	var nextSlide = 0;
 	var numOfSlides = 0;
